@@ -1,20 +1,58 @@
 /* ---------
 header start
 ---------- */
+header{
+    background-color: #562EFF;
+    width: 100%;
+    height: 94px;
+    margin-bottom: 10px;
+}
+.header-icon img{
+    position: absolute;
+    width: 40.42px;
+    height: 51px;
+    left: 330px;
+    top: 30px;
+}
+.header-icon h3{
+    position:absolute ;
+    left: 390px;
+    top: 30px;
+    color: rgb(255, 255, 255);
+    
+}
+.header-manu{
+    display: flex;
+    position: relative;
+    left: 940px;
+}
+.header-list a{
+text-decoration: none;
+color: ivory;
+}
+.header-list{
+    padding-right: 20px;
+    padding-top: 20px;
+    }
+.header-profile{
+    padding-top: 20px;
+    width: 51px;
+    height: 51px;
+    }
 
 /*------- display color and styles ---------*/
 .contner{
-background-color: rgb(124, 128, 128);
-width: 870px;
-padding-bottom:30px;
-margin-bottom: 30px;
+    background-color: rgb(255, 223, 223);
+    width: 870px;
+    padding-bottom:30px;
+    margin-bottom: 30px;
 
 }
 body{
     font-family: 'Poppins', sans-serif
 }
 hr{
-    border: 1px solid rgb(226, 223, 226);
+    border: 1px solid rgb(255, 230, 255);
     margin-left: 0%;
     width: 96%;
    margin-top: 20px;
@@ -56,35 +94,35 @@ main{
 /*--------------- blog start -----------*/
 .thamnal img{
     width: 177px;
-height: 117px;
+    height: 117px;
 }
 .blog{
     display: flex;}
  .blogs{
-display:grid;
-grid-template-columns: repeat(2,1fr);
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
  }
 /*-------------*/
 /*cources start */
 /*--------------*/
 .coursces{
-display: grid;
-grid-template-columns: repeat(3,1fr);
-margin-left: 20px;
-padding-bottom: 30px;
-}
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-left: 20px;
+    padding-bottom: 30px;
+    }
 .titels.padding{
     padding-left: 20px;
 }
 .Lates-Course{
-    background-color: rgb(124, 128, 128);
+    background-color:rgb(255, 226, 226);
     width: 870px;
    
 }
 .Course-thamnal img{
-width: 224px;
-height: 104px;
-}
+    width: 224px;
+    height: 104px;
+    }
 .fa-star.fild{
     color: goldenrod;
 }
@@ -96,11 +134,69 @@ color: rgb(79, 84, 85);
     justify-content: space-between;
 }
 .cource-time{
-background-color: rgb(255, 176, 216);
-margin-right: 40px;
-padding: 5px 10px;
-border-radius: 15px;
+    background-color: rgb(255, 176, 216);
+    margin-right: 40px;
+    padding: 5px 10px;
+    border-radius: 15px;
+}
+/*---------------------
+ media query for mobile  :-
+ ---------------------*/
+@media only screen and (max-width:480px) {
+  
+.contner{
+    width: 100%;
+}
+.blog{
+flex-direction: column;
+
+}
+.players{
+      grid-template-columns: repeat(1,1fr);
+  }  
+  .blogs{
+    grid-template-columns: repeat(1,1fr);
+  }
+  .Lates-Course{
+      width: 100%;
+  }
+  .coursces{
+      grid-template-columns: repeat(1,1fr);
+      
+  }
+  .header-icon{
+    position: relative;
+    right: 300px;
 }
 
-
-
+}
+/*---------------------
+ i pad or other pad 
+-----------------------*/
+@media only screen and (min-width:500px) and (max-width:819px){
+    .contner{
+        width: 100%;
+    }
+    .blog{
+    flex-direction: column;
+    
+    }
+    .players{
+          grid-template-columns: repeat(2,1fr);
+      }  
+      .blogs{
+        grid-template-columns: repeat(2,1fr);
+      }
+      .Lates-Course{
+          width: 100%;
+      }
+      .coursces{
+          grid-template-columns: repeat(2,1fr);
+          
+      }  
+      .header-icon{
+          position: relative;
+          right: 300px;
+      }
+      
+}
